@@ -121,7 +121,7 @@ button img {
 
 
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 225px) {
     body {
         display: flex;
         flex-direction: column;
@@ -131,21 +131,75 @@ button img {
     }
     #site-header {
         width: 100%;
+        margin-bottom: -20px;
     }
     .site-main {
         width: 100%;
     }
     .site-heading {
-        font-size: 20px;
+        font-size: 10px;
     }
     .site-main {
-        padding: 10px 0 10px 50px;
+        padding: 10px 0 10px 20px;
     }
     button {
-        padding: 0 10px;
+        padding: 0 5px;
         margin: 0 5px;
+        font-size: 10px;
+    }
+    #back-left {
+        width: 60px;
+        font-size: 12px;
+        height: 25px;
+    }
+    .light-dark-btn img {
+        width: 15px;
+    }
+    #flags {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .flag-img , .flag-box{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .flag-img img {
+        width: 100%;
     }
 
+    .flag-box h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .flag-box-title, .flag-box-text {
+        margin-bottom: 30px;
+    }
+    .flag-box-title p , .flag-box-text p {
+        color: var(--text-color);
+        font-size: 13px;
+        line-height: 28px;
+    }
+    .flag-box-title span, .flag-box-text span {
+        color: var(--text-color);
+        font-size: 10px;
+    }
+    .flag-box-btn span {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .flag-box-btn button {
+        width: 50px;
+        height: 20px;
+        font-size: 8px;
+        
+    }
+}
+
+@media only screen and (min-width: 375px)  {
+    .site-heading {
+        font-size: 20px;
+    }
     .flag-img , .flag-box{
         width: 90%;
         margin: 0 auto;
@@ -176,7 +230,11 @@ button img {
     }
 }
 
+
 @media only screen and (min-width: 650px) {
+    #site-header {
+        margin-bottom: 50px;
+    }
     .site-main {
         width: 100%;
     }
@@ -198,9 +256,27 @@ button img {
     .flag-box-btn span {
         display: block;
     }
+    #back-left {
+        width: 80px;
+        height: 40px;
+        padding: 8px 13px;
+        font-size: 16px;
+        margin: 50px 0;
+    }
+    .light-dark-btn img {
+        width: 20px;
+    }
+    .flag-box-btn button {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
+    #site-header {
+        margin-bottom: 50px;
+    }
     .site-heading {
         font-size: 32px;
     }
@@ -216,6 +292,16 @@ button img {
         justify-content: space-between;
         width: 48%;
     }
+    #back-left {
+        width: 80px;
+        height: 40px;
+        padding: 8px 13px;
+        font-size: 16px;
+        margin: 50px 0;
+    }
+    .light-dark-btn img {
+        width: 25px;
+    }
     .flag-box-title , .flag-box-text{
         width: 50%;
     }
@@ -229,4 +315,11 @@ button img {
     .flag-box-btn span {
         font-size: 18px;
     }
+    .flag-box-btn button {
+        width: 100px;
+        height: 35px;
+        font-size: 16px;
+    }
 }
+
+

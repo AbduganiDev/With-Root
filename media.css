@@ -1,3 +1,90 @@
+@media only screen and (min-width: 225px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--body-bg);
+        min-height: 100vh;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    #site-header {
+        width: 100%;
+    }
+    .site-main {
+        width: 100%;
+    }
+    .site-heading {
+        font-size: 10px;
+    }
+    .site-main {
+        padding: 10px 0 10px 20px;
+        font-size: 12px;
+    }
+    .light-dark-btn {
+        font-size: 12px;
+    }
+    .light-dark-btn img {
+        width: 15px;
+    }
+    button {
+        padding: 0 5px;
+        margin: 0 5px;
+    }
+    .site-search {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .search-box {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .search-btn {
+        width: 100%;
+        height: 20px;
+        font-size: 8px;
+    }
+    .site-toggle {
+        width: 20%;
+        margin-left: 5%;
+    }
+    .click, .links {
+        width: 150px;
+        padding: 0;
+        height: 30px;
+        font-size: 12px;
+    }
+    .click i {
+        font-size: 14px;
+    }
+    #site-flags {
+        margin-top: 20px; 
+    }
+    .row-flag {
+        margin-bottom: 10px;
+    }
+    .site-flag-part {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .flag-text {
+        padding: 20px 0 20px 20px;
+    }
+    .flag-text h2, .flag-text h3 {
+        font-size: 14px;
+    }
+    .flag-text p {
+        font-size: 12px;
+    }
+    .flag-text span {
+       font-size: 10px;
+    }
+}
+
 @media only screen and (min-width: 375px) {
     body {
         display: flex;
@@ -25,17 +112,35 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .light-dark-btn {
+        font-size: 14px;
+    }
+    .light-dark-btn img {
+        width: 18px;
+    }
     .search-box {
         width: 90%;
+        height: 40px;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+    .search-btn {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
     }
     .site-toggle {
         width: 20%;
         margin-left: 5%;
     }
+    .click i {
+        font-size: 16px;
+    }
     .click, .links {
         width: 150px;
+        padding: 0;
+        height: 40px;
+        font-size: 14px;
     }
     #site-flags {
         margin-top: 50px; 
@@ -84,7 +189,7 @@
         justify-content: space-between;
     }
     .search-box {
-        width: 30%;
+        width: 50%;
         margin: 0 0 0 50px;
         margin-bottom: 20px;
     }
@@ -99,6 +204,9 @@
         width: 90%;
         margin-bottom: 5px;
     }
+    .search-box {
+        width: 30%;
+    }
     .site-flag-part {
         width: 48%;
         margin-bottom: 20px;
@@ -107,9 +215,18 @@
         width: 100%;
         height: 160px;
     }
+    .flag-text h2, .flag-text h3 {
+        font-size: 24px;
+    }
+    .flag-text p {
+        font-size: 16px;
+    }
+    .flag-text span {
+       font-size: 14px;
+    }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1025px) {
     .row-flag {
         width: 90%;
         margin-bottom: 5px;
@@ -121,5 +238,14 @@
     .site-flag-part img {
         width: 100%;
         height: 160px;
+    }
+    .flag-text h2, .flag-text h3 {
+        font-size: 24px;
+    }
+    .flag-text p {
+        font-size: 14px;
+    }
+    .flag-text span {
+       font-size: 12px;
     }
 }
