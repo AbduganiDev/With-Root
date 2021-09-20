@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --body-bg: #F2F2F2;
+    --header-bg: #fff;
+    --text-color: #000;
+    --back-btn: #fff;
+}
+
+.dark-btn {
+    --body-bg: #2b3844;
+    --header-bg: #202c36;
+    --text-color: #fff;
+    --back-btn: #2B3844;
+    transition: .3s ease;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-bg);
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+#site-header {
+    box-shadow: rgba(0, 0, 0, 0.0562);
+}
+.site-main {
+    height: 70px;
+    background-color: var(--header-bg);
+    box-shadow: rgba(0, 0, 0, 0.0562);
+    padding: 15px 0 15px 81px;
+    line-height: 35px;
+}
+
+.site-heading {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--text-color);
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: var(--header-bg);
+    height: 40px;
+    line-height: 20px;
+    padding: 0 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+button img {
+    margin-bottom: -3px;
+    margin-right: 10px;
+}
+
+#back-left {
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(82, 82, 82, 0.562);
+    margin-top: 50px;
+    margin-left: 30px;
+}
+#back-left a {
+    text-decoration: none;
+}
+
+.flag {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flag-img, .flag-box {
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 45%;
+}
+.flag-img img {
+    width: 100%;
+}
+.flag-box h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.flag-box-title, .flag-box-text {
+    margin-bottom: 20px;
+}
+.flag-box-title p , .flag-box-text p{
+    line-height: 25px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+.flag-box-title span , .flag-box-text span{
+    color: var(--text-color);
+    font-size: 14px;
+}
+.flag-box-btn span {
+    color: var(--text-color);
+}
+.flag-box-btn button {
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(82, 82, 82, 0.562);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--body-bg);
+        min-height: 100vh;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    #site-header {
+        width: 100%;
+    }
+    .site-main {
+        width: 100%;
+    }
+    .site-heading {
+        font-size: 20px;
+    }
+    .site-main {
+        padding: 10px 0 10px 50px;
+    }
+    button {
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+
+    .flag-img , .flag-box{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .flag-img img {
+        width: 100%;
+    }
+
+    .flag-box h2 {
+        margin-bottom: 20px;
+    }
+    .flag-box-title, .flag-box-text {
+        margin-bottom: 50px;
+    }
+    .flag-box-title p , .flag-box-text p {
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .flag-box-title span, .flag-box-text span {
+        color: var(--text-color);
+        font-size: 14px;
+    }
+    .flag-box-btn span {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .site-main {
+        width: 100%;
+    }
+    .site-heading {
+        font-size: 24px;
+    }
+    .site-main {
+        padding: 12px 0 12px 55px;
+    }
+    .flag-box h2 {
+        font-size: 2.2rem;
+    }
+    .flag-box-title p , .flag-box-text p, .flag-box-title span, .flag-box-btn span , .flag-box-text span  {
+        font-size: 20px;
+    }
+    .flag-box-btn button {
+        width: 100px;
+    }
+    .flag-box-btn span {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .site-heading {
+        font-size: 32px;
+    }
+    .site-main button , .site-main img {
+        font-size: 20px;
+    }
+    .flag-box h2 {
+        width: 100%;
+    }
+    .flag-img , .flag-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 48%;
+    }
+    .flag-box-title , .flag-box-text{
+        width: 50%;
+    }
+    .flag-box-btn span {
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .flag-box-title span, .flag-box-text span {
+        font-size: 14px;
+    }
+    .flag-box-btn span {
+        font-size: 18px;
+    }
+}
